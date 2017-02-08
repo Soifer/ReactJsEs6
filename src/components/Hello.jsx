@@ -13,7 +13,7 @@ import React from "react";
 // }
 
 
-   class Hello extends React.Component {
+ export class Hello extends React.Component {
     constructor() {
         super();
         // this.state = { todos: todoStore.getAll() };

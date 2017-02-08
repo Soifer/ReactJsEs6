@@ -1,12 +1,16 @@
 {
+    "parser": "babel-eslint",
     "extends": ["eslint:recommended", "plugin:react/recommended"],
+    //   "extends": ["eslint:all", "plugin:react/all"],
     "plugins": [
         "react"
     ],
     "parserOptions": {
+        "ecmaVersion": 6,
         "ecmaFeatures": {
-            "jsx": false
-        }
+            "jsx": true
+        },
+        "sourceType": "module"
     },
     "settings": {
         "react": {
@@ -15,10 +19,13 @@
             "version": "15.0" // React version, default to the latest React stable release 
         }
     },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
     "rules": {
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"]
+        "react/jsx-uses-vars": "error"
     }
 }
