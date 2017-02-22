@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router';
 
-export class HomePage extends React.Component {
+export class HomePage extends Component {
     render() {
         return (
             <div>
@@ -13,5 +13,3 @@ export class HomePage extends React.Component {
         );
     }
 }
-
-export default HomePage;

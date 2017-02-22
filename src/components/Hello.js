@@ -8,8 +8,7 @@ import {Register} from './RegisterComponent';
 //     framework: string; } export interface State {
 //     todos: todoItem[]; }
 
-export class Hello extends
-React.Component {
+export class Hello extends React.Component {
     constructor() {
         super();
         // this.state = { todos: todoStore.getAll() };
