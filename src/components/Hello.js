@@ -1,19 +1,15 @@
 import React from "react";
-// import { Todo } from '../../actions/todoActions';
-// import { todoStore } from "../../stores/todoStore";
-// import { todoItem, TodoItem } from '../components/TodoItem';
+import {Router, Route, hashHistory} from 'react-router';
+import {Register} from './RegisterComponent';
 
-// export interface HelloProps {
-//     compiler: string;
-//     framework: string;
-// }
-// export interface State {
-//     todos: todoItem[];
+// import { Todo } from '../../actions/todoActions'; import { todoStore } from
+// "../../stores/todoStore"; import { todoItem, TodoItem } from
+// '../components/TodoItem'; export interface HelloProps {     compiler: string;
+//     framework: string; } export interface State {
+//     todos: todoItem[]; }
 
-// }
-
-
- export class Hello extends React.Component {
+export class Hello extends
+React.Component {
     constructor() {
         super();
         // this.state = { todos: todoStore.getAll() };
@@ -63,8 +59,8 @@ import React from "react";
 
         </div>
     }*/
-      render() {
-          return <div>Hello asda  asdasdsa wae dsadsa  ads</div>
-      }
+    render(){
+        return <div> Hello asda asdasdsa wae dsadsa ads</div>;
+    }
 }
- export default Hello;
+export default Hello;

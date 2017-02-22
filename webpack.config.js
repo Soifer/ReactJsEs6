@@ -7,7 +7,7 @@ module.exports = {
   entry: [
     'babel-polyfill', 'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
     'webpack/hot/only-dev-server',
-    "./src/main.js" // Your appʼs entry point
+    "./src/index.js" // Your appʼs entry point
   ],
   watch: true,
   output: {
@@ -32,6 +32,14 @@ module.exports = {
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
         use: ['react-hot-loader', 'babel-loader?babelrc=false,presets[]=es2015,presets[]=react,cacheDirectory=false']
+      },
+      {
+        test: /(\.css)$/,
+        use: [ 'style-loader','css-loader']
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        use: [ 'url-loader?limit=100000']
       },
       {
         enforce: 'pre',
