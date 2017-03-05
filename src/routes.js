@@ -6,14 +6,15 @@ import {App} from './components/App';
 import {Register} from './components/RegisterComponent';
 import {HomePage} from './components/home/HomePage';
 import {Router, Route, IndexRoute} from 'react-router';
-import {AboutPage} from './components/about/AboutPage'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {AboutPage} from './components/about/AboutPage';
+import CoursesPage from './components/course/CoursesPage';
 
 export default(
     <Route path="/" component={App}>
         <IndexRoute component={HomePage}/>
         <Route path="about" component={AboutPage}/>
         <Route path="register" component={Register}/>
+        <Route path="courses" component={CoursesPage}/>
         {/*<Route path="*" component={Hello}/>*/}
     </Route>
 );

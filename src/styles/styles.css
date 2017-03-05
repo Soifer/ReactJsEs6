@@ -1,0 +1,15 @@
+#content{
+    font: 20px 'Helvetica Neue', Helvetica, Arial, sans-serief;
+    color:crimson;
+    min-width: 550px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+a.acticve {
+    color: orange;
+}
+
+nav{
+    padding-top: 20px;
+}
