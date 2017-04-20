@@ -10,7 +10,7 @@ const SelectInput = ({
     options
 }) => {
     return (
-        <div>
+        <div className="form-group">
             <label htmlFor={name}>{label}</label>
             <div className="field">
                 <select
