@@ -1,8 +1,7 @@
 import 'babel-polyfill';
 import React from "react";
 import ReactDOM from "react-dom";
-import {Hello} from './components/Hello';
-import {App} from './components/App';
+import App from './components/App';
 import {Register} from './components/RegisterComponent';
 import HomePage from './components/home/HomePage';
 import {Router, Route, IndexRoute} from 'react-router';
