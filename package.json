@@ -29,6 +29,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.9.0",
     "file-loader": "^0.10.0",
+    "jquery": "^3.2.1",
     "lint": "^1.1.2",
     "open": "0.0.5",
     "react": "^15.4.2",
@@ -72,7 +73,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.20.0",
-    "jsx-ast-utils": "^1.4.0"
+    "jsx-ast-utils": "^1.4.0",
+    "toastr": "^2.1.2"
   },
   "keywords": [
     "eslint",
