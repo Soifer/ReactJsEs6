@@ -8,7 +8,7 @@
     "test:watch": "npm run test -- --watch",
     "babel": "babel",
     "webpack": "webpack",
-    "serve": "webpack-dev-server --hot --inline --colors --history-api-fallback",
+    "serve": "webpack-dev-server --progress --hot --inline --colors --history-api-fallback",
     "eslint": "lint",
     "start": "npm-run-all --parallel  test:watch serve "
   },

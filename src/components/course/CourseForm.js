@@ -12,7 +12,7 @@ const CourseForm = ({
 }) => {
     return (
         <form>
-            <h1>Manage Courswse</h1>
+            <h1>Manage Course</h1>
             <TextInput
                 name="title"
                 label="Title"
@@ -36,14 +36,19 @@ const CourseForm = ({
                 onChange={onChange}
                 error={errors.category}/>
 
-            {/*<TextInput
+            <TextInput
                 name="length"
                 label="Length"
                 value={course.length}
                 onChange={onChange}
-                error={errors.length}/>*/}
+                error={errors.length}/>
 
-
+             <input
+                  type="submit"
+                  disabled={saving}
+                  value={saving ? 'Saving...' : 'Save'}
+                  className="btn btn-primary"
+                  onClick={onSave}/>
         </form>
     );
 };
