@@ -1,5 +1,5 @@
 //var WebpackDevServer = require("webpack-dev-server");
-var webpack = require('webpack');
+const webpack = require('webpack');
 const LoaderOptionsPlugin = require("webpack/lib/LoaderOptionsPlugin");
 // var path = require('path');
 

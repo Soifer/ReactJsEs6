@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register --reporter progress src/tools/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch",
     "babel": "babel",
     "webpack": "webpack",
-    "start": "webpack-dev-server --hot --inline --history-api-fallback",
-    "eslint": "lint"
+    "serve": "webpack-dev-server --hot --inline --colors --history-api-fallback",
+    "eslint": "lint",
+    "start": "npm-run-all --parallel  test:watch serve "
   },
   "author": "Mark Soifer",
   "license": "ISC",
@@ -19,8 +21,11 @@
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^3.3.7",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.8.2",
     "esformatter": "^0.10.0",
     "esformatter-jsx": "^7.4.1",
     "eslint": "^3.15.0",
@@ -28,11 +33,16 @@
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.9.0",
+    "expect": "^1.20.2",
     "file-loader": "^0.10.0",
     "jquery": "^3.2.1",
+    "jsdom": "^10.1.0",
     "lint": "^1.1.2",
+    "mocha": "^3.3.0",
+    "npm-run-all": "^4.0.2",
     "open": "0.0.5",
     "react": "^15.4.2",
+    "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^1.3.1",
     "react-redux": "^5.0.3",
@@ -42,9 +52,10 @@
     "redux-thunk": "^2.2.0",
     "source-map-loader": "^0.1.6",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
+    "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.3.0",
+    "whatwg-url": "^4.7.1"
   },
   "esformatter": {
     "plugins": [
