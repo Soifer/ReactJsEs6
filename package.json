@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --reporter progress src/tools/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --compilers js:babel-core/register --reporter nyan spec src/tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "babel": "babel",
     "webpack": "webpack",
