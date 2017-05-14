@@ -1,5 +1,6 @@
 
 require('babel-polyfill');
+import 'jsdom-global/register';
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
