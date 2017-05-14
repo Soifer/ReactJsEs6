@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
+import TestUtils from 'react-dom/test-utils';
 import CourseForm from './CourseForm';
 
 function setup(saving) {
@@ -25,17 +25,26 @@ describe('CourseForm via React Test Utils', () => {
         expect(output.type).toBe('form');
         let [h1] = output.props.children;
         expect(h1.type).toBe('h1');
+        afterEach(function (done) {
+            setTimeout(done, 300);
+        });
     });
 
     it('save button is labled "Save" when not saving', () => {
         const {output} = setup(false);
         const submitButton = output.props.children[5];
         expect(submitButton.props.value).toBe('Save');
+        afterEach(function (done) {
+            setTimeout(done, 300);
+        });
     });
 
     it('save button is labled "Saving..." when not saving', () => {
         const {output} = setup(true);
         const submitButton = output.props.children[5];
         expect(submitButton.props.value).toBe('Saving...');
+        afterEach(function (done) {
+            setTimeout(done, 300);
+        });
     });
 });
