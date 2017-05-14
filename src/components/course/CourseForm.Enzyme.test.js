@@ -1,6 +1,5 @@
 import expect from 'expect';
 import React from 'react';
-import TestUtils from 'react-dom/test-utils';
 import {shallow} from 'enzyme';
 import CourseForm from './CourseForm';
 
